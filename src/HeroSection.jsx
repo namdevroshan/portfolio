@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import profileImage from "./assets/young-pretty-woman-looking-happy-goofy-with-broad-fun-loony-smile-eyes-wide-open-against-white-wall 2.svg"; // Replace with actual image path
 import threeLineImage from "./assets/Vector 1.svg"; // Replace with actual image path
 import threeLineImageBottom from "./assets/Vector 2.svg"; // Replace with actual image path
+import "./index.css"
 const HeroSection = () => {
   return (
     <section className="relative bg-white top-9 text-black flex flex-col items-center justify-center text-center py-16 px-4">
@@ -13,10 +14,15 @@ const HeroSection = () => {
 
       {/* Three-Line Image */}
       <img 
-        src={threeLineImage} 
-        alt="Decorative lines" 
-        className="absolute top-3 left-[54%] transform -translate-x-1/2 w-9"
-      />
+  src={threeLineImage} 
+  alt="Decorative lines" 
+  className="absolute w-9 transform -translate-x-1/2 three-line-img"
+/>
+
+
+
+
+
 
       {/* Hello Badge */}
       <motion.div
@@ -36,28 +42,28 @@ const HeroSection = () => {
       <img 
         src={threeLineImageBottom} 
         alt="Decorative lines" 
-        className="absolute top-[23%] left-80 w-16"
+        className="absolute  w-16 threeLineImageBottom"
       />
 
       {/* Profile Image */}
       <motion.img
         src={profileImage}
         alt="Jenny"
-        className="relative mt-4 w-130 h-130 object-cover "
+        className="relative mt-4 w-130 h-130 object-cover  hero-section-img"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
       />
 
       {/* Testimonial */}
-      <div className="absolute left-4 top-1/3 max-w-sm text-left text-gray-600 text-xl font-semibold">
-        <p className="text-xl italic">“Jenny’s exceptional product design ensured our website’s success. Highly recommended.”</p>
+      <div className="absolute left-4 top-1/3 max-w-sm text-left text-gray-600 text-xl font-semibold testimonial-div ">
+        <p className="italic testimonial">“Jenny’s exceptional product design ensured our website’s success. Highly recommended.”</p>
       </div>
 
       {/* Experience */}
-      <div className="absolute right-6 top-1/3 flex flex-col items-center">
-        <div className="flex gap-1 text-orange-500 text-2xl">★★★★★</div>
-        <p className="text-black font-bold text-3xl">10 Years</p>
-        <p className="text-gray-500 text-xl">Experience</p>
+      <div className="absolute right-6 top-1/3 flex flex-col items-center ex-div">
+        <div className="flex gap-1 text-orange-500 text-2xl stars-ex">★★★★★</div>
+        <p className="text-black font-bold text-3xl years-ex">10 Years</p>
+        <p className="text-gray-500 text-xl expere-ex">Experience</p>
       </div>
     </section>
   );

@@ -1,4 +1,89 @@
 @import "tailwindcss";
 
 
+.three-line-img {
+    position: absolute;
+    top: 12px;
+    left: 54%;
+  }
+  
+  @media (max-width: 768px) { /* Tablet */
+    .three-line-img {
+      top: 8px;
+      left: 57%;
+    }
+  }
+  
+  @media (max-width: 640px) { /* Mobile */
+    .three-line-img {
+      top: 6px;
+      left: 64%;
+    }
+  }
+  .threeLineImageBottom{
+    top: 24%;
+    left: 26%;
+  }
+  
+  
+  @media (max-width: 768px) { /* Tablet */
+    .threeLineImageBottom {
+      top: 24%;
+      left: 10%;
+    }
+  }
+  
+  @media (max-width: 640px) { /* Mobile */
+    .threeLineImageBottom {
+      top: 31%;
+      left: 6%;
+    }
+    /* .hero-section-img{
+        width: 190px;
+        height: 190px;
+    } */
+  }
 
+
+  .testimonial{
+    font-size: 20px;
+  }
+  @media (max-width: 768px) { /* Tablet */
+    .testimonial{
+        width: 239px;
+        font-size: 17px;
+      }
+      .testimonial-div{
+        top:293px;
+      }
+  }
+  @media (max-width: 640px) { /* Tablet */
+    .testimonial{
+        width: 128px;
+        font-size: 11px;
+      }
+      .testimonial-div{
+        top:362px;
+      }
+  }
+
+
+
+  @media (max-width: 640px) { /* Tablet */
+    .ex-div{
+        top: 351px;
+      }
+      .stars-ex{
+        font-size: 21px;
+      }
+      .years-ex{
+        font-size:20px ;
+      }
+      .expere-ex{
+        font-size: 15px;
+      }
+      
+  }
+ 
+
+  
